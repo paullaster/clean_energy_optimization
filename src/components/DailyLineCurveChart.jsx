@@ -42,12 +42,8 @@ const DailyLineCurveChart = ({ labels, plotData }) => {
     }
   };
 
-  const plotData = datasets.map((dataset) => {
-    console.log(dataset.production)
-    return dataset.production;
-  });
   const data = {
-    lables,
+    labels,
     dataset: [
       {
         lable: "Hourly Clean Energy Levels in Barrels",

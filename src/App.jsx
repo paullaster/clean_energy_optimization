@@ -9,8 +9,13 @@ const App = () => {
     return dataset.hour;
   });
   
+  const plotData = HourlyEnergyData.map((dataset) => {
+    console.log(dataset.production)
+    return dataset.production;
+  });
+
   return (
-    <HourlyEnergyCurve lables={lables} />
+    <HourlyEnergyCurve lables={lables} plotData={plotData} />
   )
 }
 
