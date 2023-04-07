@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState, useEffect,useRef} from "react";
 import * as Echarts from 'echarts';
 
-const DailyLineCurveChart = ({ labels, plotData }) => {
+const DailyLineCurveChart = ({ width, height, options }) => {
  
+    const chartHolder = useRef(null);
 
   const options = {
     responsive: true,
@@ -36,7 +37,7 @@ const DailyLineCurveChart = ({ labels, plotData }) => {
       }
     ]
   };
-  return <Line options={options} data={data}/>;
+  return <div ref={chartHolder}></div>;
 };
 
 export default DailyLineCurveChart;
