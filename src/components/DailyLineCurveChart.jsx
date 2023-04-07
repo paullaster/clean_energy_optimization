@@ -21,6 +21,7 @@ const DailyLineCurveChart = () => {
     Tooltip,
     Legend
   );
+  
   return <div>DailyLineCurveChart</div>;
 };
 
