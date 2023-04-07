@@ -11,7 +11,7 @@ import {
 } from "chartjs";
 import { Line } from "react-chartjs-2";
 
-const DailyLineCurveChart = (datasets, xAxis) => {
+const DailyLineCurveChart = ({datasets, }) => {
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -36,7 +36,7 @@ const DailyLineCurveChart = (datasets, xAxis) => {
   };
 
   const lables = datasets.map( (dataset) => {
-    return dataset.xAxis;
+    return dataset.hour;
   })
   return <div>DailyLineCurveChart</div>;
 };
