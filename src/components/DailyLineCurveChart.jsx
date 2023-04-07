@@ -2,9 +2,10 @@ import React, {useState, useEffect,useRef} from "react";
 import * as Echarts from 'echarts';
 
 const DailyLineCurveChart = ({ width, height, option }) => {
- 
-    const [chart, setChart] = useState(null);
+
     const chartHolder = useRef(null);
+    const [chart, setChart] = useState(chartHolder);
+    
 
     useEffect ( () => {
         if (!chart){
