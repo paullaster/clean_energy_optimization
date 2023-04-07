@@ -1,4 +1,5 @@
 import React from 'react'
+import { HourlyEnergyCurve } from './components'
 
 const App = () => {
   return (
