@@ -1,5 +1,5 @@
 import React, {useState, useEffect,useRef} from "react";
-import * as Echarts from 'echarts';
+import * as echarts from 'echarts';
 
 const DailyLineCurveChart = ({ width, height, options }) => {
 
@@ -9,7 +9,7 @@ const DailyLineCurveChart = ({ width, height, options }) => {
 
     useEffect ( () => {
         if (!chart){
-            setChart( Echarts.init(chartHolder.current));
+            setChart( echarts.init(chartHolder.current));
         }else {
             chart.resize({width, height});
             chart.setOptions(options);
