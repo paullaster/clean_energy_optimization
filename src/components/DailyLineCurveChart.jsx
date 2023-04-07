@@ -61,7 +61,7 @@ const DailyLineCurveChart = ({ datasets }) => {
       }
     ]
   };
-  return <div>DailyLineCurveChart</div>;
+  return <Line options={options} data={data}/>;
 };
 
 export default DailyLineCurveChart;
