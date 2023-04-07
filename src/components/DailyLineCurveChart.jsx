@@ -12,6 +12,7 @@ import {
 import { Line } from "react-chartjs-2";
 
 const DailyLineCurveChart = ({ datasets = [] }) => {
+  console.log(datasets)
   ChartJS.register(
     CategoryScale,
     LinearScale,
