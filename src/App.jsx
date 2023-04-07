@@ -4,12 +4,12 @@ import HourlyEnergyData from './db/daily_energy_stat.json';
 
 const App = () => {
   
-  const lables = HourlyEnergyData.map((dataset) => {
+  const lables = HourlyEnergyData.hourly_production.map((dataset) => {
     console.log(dataset.hour)
     return dataset.hour;
   });
   
-  const plotData = HourlyEnergyData.map((dataset) => {
+  const plotData = HourlyEnergyData.hourly_production.map((dataset) => {
     console.log(dataset.production)
     return dataset.production;
   });
