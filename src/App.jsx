@@ -28,7 +28,7 @@ const App = () => {
       }
     ]
   };
-  return <HourlyEnergyCurve lables={lables} option={option} />;
+  return <HourlyEnergyCurve width='500px' height='500px' option={option} />;
 };
 
 export default App;
