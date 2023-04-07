@@ -9,7 +9,7 @@ import {
   Tooltip,
   Legend
 } from "chartjs";
-import { Line} from 'react-chartjs-2'
+import { Line } from "react-chartjs-2";
 
 const DailyLineCurveChart = () => {
   ChartJS.register(
@@ -21,7 +21,15 @@ const DailyLineCurveChart = () => {
     Tooltip,
     Legend
   );
-  
+
+  const options = {
+    responsive: true,
+    plugins: {
+        legend: {
+            
+        }
+    }
+  };
   return <div>DailyLineCurveChart</div>;
 };
 
