@@ -37,7 +37,15 @@ const DailyLineCurveChart = ({datasets, }) => {
 
   const lables = datasets.map( (dataset) => {
     return dataset.hour;
+  });
+
+  const plotData = datasets.map( (dataset) => {
+    return dataset.production;
   })
+  const data = {
+    lables,
+    data,
+  }
   return <div>DailyLineCurveChart</div>;
 };
 
