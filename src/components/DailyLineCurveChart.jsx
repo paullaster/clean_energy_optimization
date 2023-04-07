@@ -12,7 +12,6 @@ import {
 import { Line } from "react-chartjs-2";
 
 const DailyLineCurveChart = ({ datasets = [] }) => {
-  console.log(datasets)
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -44,10 +43,12 @@ const DailyLineCurveChart = ({ datasets = [] }) => {
   };
 
   const lables = datasets.map((dataset) => {
+    console.log(dataset.hour)
     return dataset.hour;
   });
 
   const plotData = datasets.map((dataset) => {
+    console.log(dataset.production)
     return dataset.production;
   });
   const data = {
