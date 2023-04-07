@@ -1,5 +1,5 @@
 {
-    "date": "2023-04-07",
+    "date": "2023-02-07",
     "hourly_production": [
       {
         "hour": "07:00",
@@ -27,11 +27,11 @@
       },
       {
         "hour": "13:00",
-        "production": 110
+        "production": 120
       },
       {
         "hour": "14:00",
-        "production": 120
+        "production": 140
       },
       {
         "hour": "15:00",
@@ -39,19 +39,19 @@
       },
       {
         "hour": "16:00",
-        "production": 140
+        "production": 110
       },
       {
         "hour": "17:00",
-        "production": 150
+        "production": 70
       },
       {
         "hour": "18:00",
-        "production": 160
+        "production": 50
       },
       {
         "hour": "19:00",
-        "production": 170
+        "production": 30
       }
     ]
   }
