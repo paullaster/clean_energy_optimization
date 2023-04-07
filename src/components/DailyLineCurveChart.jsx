@@ -1,6 +1,17 @@
-import React from 'react'
+import React from "react";
 import {
-    chart as ChartJS,
+  chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+} from "chartjs";
+
+const DailyLineCurveChart = () => {
+  ChartJS.register(
     CategoryScale,
     LinearScale,
     PointElement,
@@ -8,12 +19,8 @@ import {
     Title,
     Tooltip,
     Legend
-} from 'chartjs'
+  );
+  return <div>DailyLineCurveChart</div>;
+};
 
-const DailyLineCurveChart = () => {
-  return (
-    <div>DailyLineCurveChart</div>
-  )
-}
-
-export default DailyLineCurveChart
+export default DailyLineCurveChart;
