@@ -6,6 +6,14 @@ const DailyLineCurveChart = ({ width, height, options }) => {
     const [chart, setChart] = useState(null);
     const chartHolder = useRef(null);
 
+    useEffect ( () => {
+        if (!chart){
+            setChart( Echarts.init(chartHolder.current));
+        }else {
+            chart.resize(width, height);
+        }
+    }, [])
+
   const options = {
     responsive: true,
     plugins: {
