@@ -11,7 +11,7 @@ import {
 } from "chartjs";
 import { Line } from "react-chartjs-2";
 
-const DailyLineCurveChart = ({datasets, }) => {
+const DailyLineCurveChart = ({ datasets }) => {
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -25,27 +25,34 @@ const DailyLineCurveChart = ({datasets, }) => {
   const options = {
     responsive: true,
     plugins: {
-        legend: {
-            position: 'top',
-        },
-        title: {
-            display: 'true',
-            text: 'Daily Clean Energy Production in Barrels',
-        }
-    },
+      legend: {
+        position: "top"
+      },
+      title: {
+        display: "true",
+        text: "Daily Clean Energy Production in Barrels"
+      }
+    }
   };
 
-  const lables = datasets.map( (dataset) => {
+  const lables = datasets.map((dataset) => {
     return dataset.hour;
   });
 
-  const plotData = datasets.map( (dataset) => {
+  const plotData = datasets.map((dataset) => {
     return dataset.production;
-  })
+  });
   const data = {
     lables,
-    data,
-  }
+    dataset: [
+      {
+        lable:"Hourly Clean Energy Levels in Barrels",
+        data: plotData,
+        borderWidth: 1,
+        borderColor: "rgba(255, 25, 5)"
+      }
+    ]
+  };
   return <div>DailyLineCurveChart</div>;
 };
 
