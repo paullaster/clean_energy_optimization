@@ -1,7 +1,7 @@
 import React, {useState, useEffect,useRef} from "react";
 import * as Echarts from 'echarts';
 
-const DailyLineCurveChart = ({ width, height, option }) => {
+const DailyLineCurveChart = ({ width, height, options }) => {
 
     const chartHolder = useRef(null);
     const [chart, setChart] = useState(chartHolder);
@@ -12,7 +12,7 @@ const DailyLineCurveChart = ({ width, height, option }) => {
             setChart( Echarts.init(chartHolder.current));
         }else {
             chart.resize({width, height});
-            chart.setOptions(option);
+            chart.setOptions(options);
         }
     }, [chart, options, width, height])
 

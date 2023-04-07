@@ -12,7 +12,7 @@ const App = () => {
   //   console.log(dataset.production)
   //   return dataset.production;
   // });
-  const option = {
+  const options = {
     xAxis: {
       type: "category",
       data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
@@ -28,7 +28,7 @@ const App = () => {
       }
     ]
   };
-  return <HourlyEnergyCurve width='500px' height='500px' option={option} />;
+  return <HourlyEnergyCurve width={500} height={500} options={options} />;
 };
 
 export default App;
