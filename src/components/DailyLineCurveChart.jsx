@@ -46,10 +46,11 @@ const DailyLineCurveChart = ({ datasets }) => {
     lables,
     dataset: [
       {
-        lable:"Hourly Clean Energy Levels in Barrels",
+        lable: "Hourly Clean Energy Levels in Barrels",
         data: plotData,
         borderWidth: 1,
-        borderColor: "rgba(255, 25, 5)"
+        borderColor: "rgba(255, 25, 5)",
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
       }
     ]
   };
