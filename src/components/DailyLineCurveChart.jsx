@@ -16,7 +16,7 @@ const DailyLineCurveChart = ({ width, height, options }) => {
     }, [chart, options, width, height])
 
   
-  return <div ref={chartHolder}></div>;
+  return <div style={{width, height}} ref={chartHolder}></div>;
 };
 
 export default DailyLineCurveChart;
