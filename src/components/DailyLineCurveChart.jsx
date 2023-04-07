@@ -32,6 +32,13 @@ const DailyLineCurveChart = ({ datasets }) => {
         display: "true",
         text: "Daily Clean Energy Production in Barrels"
       }
+    },
+    options: {
+        scale: {
+            y: {
+                beginAtZero: true
+            }
+        }
     }
   };
 
