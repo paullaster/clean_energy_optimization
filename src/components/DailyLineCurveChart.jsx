@@ -26,9 +26,13 @@ const DailyLineCurveChart = () => {
     responsive: true,
     plugins: {
         legend: {
-            
+            position: 'top',
+        },
+        title: {
+            display: 'true',
+            text: 'Daily Clean Energy Production in Barrels',
         }
-    }
+    },
   };
   return <div>DailyLineCurveChart</div>;
 };
