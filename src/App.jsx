@@ -4,7 +4,7 @@ import HourlyEnergyData from './db/daily_energy_stat.json';
 
 const App = () => {
   return (
-    <div>App</div>
+    <HourlyEnergyCurve datasets={HourlyEnergyData.hourly_production} />
   )
 }
 
