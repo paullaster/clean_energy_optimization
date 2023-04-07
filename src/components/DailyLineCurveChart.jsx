@@ -10,7 +10,8 @@ const DailyLineCurveChart = ({ width, height, options }) => {
         if (!chart){
             setChart( Echarts.init(chartHolder.current));
         }else {
-            chart.resize(width, height);
+            chart.resize({width, height});
+            chart.setOptions(options);
         }
     }, [])
 
