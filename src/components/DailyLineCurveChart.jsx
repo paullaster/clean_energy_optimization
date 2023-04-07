@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  chart as ChartJS,
+  Chart as ChartJS,
   CategoryScale,
   LinearScale,
   PointElement,
@@ -8,7 +8,7 @@ import {
   Title,
   Tooltip,
   Legend
-} from "chartjs";
+} from "chart.js";
 import { Line } from "react-chartjs-2";
 
 const DailyLineCurveChart = ({ datasets }) => {
