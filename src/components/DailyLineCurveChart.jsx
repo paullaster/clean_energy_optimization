@@ -3,6 +3,7 @@ import * as Echarts from 'echarts';
 
 const DailyLineCurveChart = ({ width, height, options }) => {
  
+    const [chart, setChart] = useState(null);
     const chartHolder = useRef(null);
 
   const options = {
